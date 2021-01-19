@@ -9,30 +9,30 @@ $(document).ready(function () {
     var statusElm = $(".status");
     statusElm.empty();
 
+    if (name.length > 1) {
+    } else {
+      statusElm.append("<div>Vul uw naam in!</div>");
+      event.preventDefault();
+      $(".status").show();
+    }
+
     if (email.length > 5 && email.includes("@") && email.includes(".")) {
     } else {
-      statusElm.append("<div>Email is onjuist!</div>");
+      statusElm.append("<div>Het opgegeven emailadres is onjuist!</div>");
       event.preventDefault();
       $(".status").show();
     }
 
     if (subject.length > 2) {
     } else {
-      statusElm.append("<div>Onderwerp is te kort!</div>");
-      event.preventDefault();
-      $(".status").show();
-    }
-
-    if (name.length > 1) {
-    } else {
-      statusElm.append("<div>Naam is te kort!</div>");
+      statusElm.append("<div>Vul een onderwerp in!</div>");
       event.preventDefault();
       $(".status").show();
     }
 
     if (message.length > 10) {
     } else {
-      statusElm.append("<div>Bericht is te kort!</div>");
+      statusElm.append("<div>Bericht moet langer zijn dan 10 tekens!</div>");
       event.preventDefault();
       $(".status").show();
     }

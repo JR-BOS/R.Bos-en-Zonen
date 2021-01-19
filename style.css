@@ -378,7 +378,7 @@ section .title::after {
 
 .contact .right form .button {
   height: 47px;
-  width: 170px;
+  width: 300px;
 }
 
 .contact .right form .button button {
@@ -399,12 +399,12 @@ section .title::after {
   background: none;
 }
 
-.status {
+.contact .status {
   margin-top: 20px;
   padding: 10px;
-  margin: 20px auto;
+  margin: 20px 0;
   background: pink;
-  width: 300px;
+  /* width: 400px; */
   text-align: center;
   border: 1px solid crimson;
   display: none;
