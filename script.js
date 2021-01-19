@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     if (email.length > 5 && email.includes("@") && email.includes(".")) {
     } else {
-      statusElm.append("<div>email is onjuist!</div>");
+      statusElm.append("<div>Email is onjuist!</div>");
       event.preventDefault();
     }
 
