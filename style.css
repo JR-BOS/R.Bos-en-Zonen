@@ -134,19 +134,17 @@ section {
 
 /* ===================== all section styling ====================== */
 
-section {
-  padding: 40px;
-}
+/* section {
+    padding: 50px;
+  } */
 
 section .title {
   position: relative;
   text-align: center;
   font-weight: 500;
   font-size: 40px;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  padding-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 100px;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -328,6 +326,7 @@ section .title::after {
 .contact .contact-content .row i {
   font-size: 25px;
   color: crimson;
+  width: 25px;
 }
 
 .contact .contact-content .info .head {
@@ -398,6 +397,17 @@ section .title::after {
 .contact .right form .button button:hover {
   color: crimson;
   background: none;
+}
+
+.status {
+  margin-top: 20px;
+  padding: 10px;
+  margin: 20px auto;
+  background: pink;
+  width: 300px;
+  text-align: center;
+  border: 1px solid crimson;
+  display: none;
 }
 
 /* =================== footer styling ================= */

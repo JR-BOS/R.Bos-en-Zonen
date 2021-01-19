@@ -13,24 +13,28 @@ $(document).ready(function () {
     } else {
       statusElm.append("<div>Email is onjuist!</div>");
       event.preventDefault();
+      $(".status").show();
     }
 
     if (subject.length > 2) {
     } else {
       statusElm.append("<div>Onderwerp is te kort!</div>");
       event.preventDefault();
+      $(".status").show();
     }
 
     if (name.length > 1) {
     } else {
       statusElm.append("<div>Naam is te kort!</div>");
       event.preventDefault();
+      $(".status").show();
     }
 
     if (message.length > 10) {
     } else {
       statusElm.append("<div>Bericht is te kort!</div>");
       event.preventDefault();
+      $(".status").show();
     }
   });
 
