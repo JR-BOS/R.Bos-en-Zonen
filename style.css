@@ -522,6 +522,11 @@ footer span {
     font-size: 20px;
   }
 
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+
   .services .services-content .card,
   .contact .contact-content .column {
     width: 100%;
