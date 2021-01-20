@@ -58,7 +58,7 @@
     </section>
 
         <!-- services section start -->
-        <section class="services" id="services">
+      <section class="services" id="services">
           <div class="max-width">
             <h2 class="title">Diensten</h2>
             <div class="services-content">
@@ -168,6 +168,44 @@
           </div>
         </section>
 
+
+        <!-- image section start -->
+        
+        <!-- The grid: four columns -->
+      <section class="media" id="media">
+        <div class="max-width">
+          <h2 class="title">Media</h2>
+          <div>
+            <p>Klik op een afbeelding om te vergroten</p>
+          </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+        </div>
+
+<!-- The expanding image container -->
+        <div class="container">
+  <!-- Close the image -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+          <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+          <div id="imgtext"></div>
+        </div>
+        </div>
+      </section>
 
         <!-- footer section start -->
 

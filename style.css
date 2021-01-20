@@ -172,7 +172,8 @@ section .title::after {
 
 .about,
 .services,
-.contact {
+.contact,
+.media {
   font-family: "Poppins", sans-serif;
   padding-bottom: 80px;
 }
@@ -408,6 +409,68 @@ section .title::after {
   text-align: center;
   border: 1px solid crimson;
   display: none;
+}
+
+/* =================== media styling ================= */
+
+/* The grid: Four equal columns that floats next to each other */
+.media .title::after {
+  content: "Onze Wagens";
+}
+
+.media .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.media .column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: calc(100% - 10px);
+}
+
+.media .column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.media .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.media .container {
+  position: relative;
+  width: 700px;
+  margin: auto;
+  display: none;
+}
+
+/* Expanding image text */
+.media #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.media .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.media p {
+  text-align: center;
 }
 
 /* =================== footer styling ================= */
