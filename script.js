@@ -1,3 +1,4 @@
+//-------------------- JQuery Code --------------------
 $(document).ready(function () {
   $(".submit").click(function (event) {
     console.log("test");
@@ -53,6 +54,7 @@ $(document).ready(function () {
   });
 });
 
+//-------------------- JavaScript Code -> image gallery --------------------
 function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");

@@ -144,7 +144,7 @@ section .title {
   font-weight: 500;
   font-size: 40px;
   padding: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -294,6 +294,15 @@ section .title::after {
 
 .contact .title::after {
   content: "get in touch";
+  background: black;
+}
+.contact .title::before {
+  background: white;
+}
+
+.contact {
+  background: black;
+  color: white;
 }
 
 .contact .contact-content .column {
@@ -335,7 +344,7 @@ section .title::after {
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: whitesmoke;
 }
 
 .contact .right form .fields {
@@ -409,18 +418,20 @@ section .title::after {
   text-align: center;
   border: 1px solid crimson;
   display: none;
+  color: black;
 }
 
 /* =================== media styling ================= */
 
 /* The grid: Four equal columns that floats next to each other */
 .media .title::after {
-  content: "Onze Wagens";
+  content: "Onze Vloot";
+  padding: 2px;
 }
 
 .media .column {
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 10px;
 }
 
@@ -428,7 +439,8 @@ section .title::after {
 .media .column img {
   opacity: 0.8;
   cursor: pointer;
-  width: calc(100% - 10px);
+  width: calc(100%);
+  height: auto;
 }
 
 .media .column img:hover {
@@ -445,7 +457,7 @@ section .title::after {
 /* The expanding image container */
 .media .container {
   position: relative;
-  width: 700px;
+  width: 800px;
   margin: auto;
   display: none;
 }
@@ -464,7 +476,7 @@ section .title::after {
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: crimson;
   font-size: 35px;
   cursor: pointer;
 }
@@ -575,6 +587,12 @@ footer span {
   }
 }
 
+@media (max-width: 950px) {
+  .media .container {
+    width: 500px;
+  }
+}
+
 @media (max-width: 767px) {
   .home .home-content .text-1 {
     font-size: 18px;
@@ -604,5 +622,8 @@ footer span {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .media .container {
+    width: 350px;
   }
 }
