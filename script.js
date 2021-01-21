@@ -67,3 +67,11 @@ function myFunction(imgs) {
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
 }
+
+function openDetails(cityName) {
+  if (document.getElementById(cityName).style.display === "block") {
+    document.getElementById(cityName).style.display = "none";
+  } else {
+    document.getElementById(cityName).style.display = "block";
+  }
+}

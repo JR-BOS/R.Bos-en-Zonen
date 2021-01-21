@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>R. Bos & Zonen</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" rel="stylesheet">
     <script src ="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </script>
   </head>
@@ -62,29 +62,44 @@
       <section class="services" id="services">
           <div class="max-width">
             <h2 class="title">Diensten</h2>
+            <p class="info">Klik voor meer informatie</p>
             <div class="services-content">
 
-              <div class="card">
+              <div class="card" onclick="openDetails('transport')">
                 <div class="box">
                   <i class="fas fa-truck"></i>
                   <div class="text">Transport</div>
-                  <p>Wij bieden u op het gebied van transport graag onze diensten aan, waaronder losgestorte bouwmaterialen en horizontaal transport. <br><br>Onze vrachtwagens zijn geschikt voor het vervoer van zand, grond, grind, puin en asfalt.</p>
+                  <p id='transport' class="details" style="display: none;">Wij bieden u op het gebied van transport graag onze diensten aan, waaronder losgestorte bouwmaterialen en horizontaal transport. <br><br>Onze vrachtwagens zijn geschikt voor het vervoer van zand, grond, grind, puin en asfalt.</p>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" onclick="openDetails('wegenbouw')">
                 <div class="box">
                   <i class="fas fa-road"></i>
                   <div class="text">Wegenbouw</div>
-                  <p>R. Bos & Zonen verhuurt voertuigen die ingezet kunnen worden voor allerhande infrawerken. Het wagenpark van R. Bos & Zonen bestaat momenteel onder meer uit trailers, 8×4 WS en 6×6 WS knijperauto’s. Overigens kunnen wij op uw verzoek beschikken over ieder ander gewenst type wagen.</p>
+                  <p id='wegenbouw' class="details" style="display: none;">R. Bos & Zonen verhuurt voertuigen die ingezet kunnen worden voor allerhande infrawerken. Het wagenpark van R. Bos & Zonen bestaat momenteel onder meer uit trailers, 8×4 WS en 6×6 WS knijperauto’s. Overigens kunnen wij op uw verzoek beschikken over ieder ander gewenst type wagen.
+                  </p>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" onclick="openDetails('zand')">
                 <div class="box">
+                  
                   <i class="fas fa-cubes"></i>
-                  <div class="text">Zand- en Grindhandel</div>
-                  <p>R. Bos & Zonen levert verhardingsmaterialen, zand (waaronder ophoog-, straat- en vulzand) en grind. <br><br><br>Heeft u interesse of wilt u advies hierover? Neem dan gerust contact met ons op.</p>
+                  <div class="text">Zand- en Grind</div>  
+                
+                  <p id="zand" class="details" style="display: none;""> 
+                    R. Bos & Zonen levert verhardingsmaterialen, zand (waaronder ophoog-, straat- en vulzand) en grind. <br><br><br>Heeft u interesse of wilt u advies hierover? Neem dan gerust contact met ons op.
+                  
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" onclick="openDetails('containers')">
+                <div class="box">
+                  <i class="fas fa-dumpster-fire"></i>
+                  <div class="text">Containers</div>
+                  <p id='containers' class="details" style="display: none;"">R. Bos & Zonen levert verhardingsmaterialen, zand (waaronder ophoog-, straat- en vulzand) en grind. <br><br><br>Heeft u interesse of wilt u advies hierover? Neem dan gerust contact met ons op.</p>
                 </div>
               </div>
               
@@ -101,7 +116,7 @@
           <h2 class="title">Wagenpark</h2>
           <div>
             <p>
-              Klik op een afbeelding om te vergroten</p>
+              Klik op een afbeelding om deze te vergroten</p>
           </div>
         <div class="row">
           <div class="column">

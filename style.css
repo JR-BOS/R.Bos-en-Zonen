@@ -259,7 +259,7 @@ section .title::after {
 }
 
 .services .services-content .card {
-  width: calc(33% - 20px);
+  width: calc(25% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
@@ -282,6 +282,15 @@ section .title::after {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+.services .info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services .services-content .details {
+  font-size: 12px;
 }
 
 .services .services-content .card .box {
