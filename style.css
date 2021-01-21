@@ -609,10 +609,15 @@ footer span {
 
   .home .home-content .text-2 {
     font-size: 30px;
+    margin-top: 200px;
+  }
+
+  .home-content {
+    margin: auto;
   }
 
   .home .home-content .text-3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .max-width {
     padding: 15px;
@@ -637,4 +642,5 @@ footer span {
 
   .home {
     background-position: right top;
+  }
 }
