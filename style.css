@@ -475,6 +475,8 @@ section .title::after {
   color: black;
   font-weight: 600;
   font-size: 20px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.514);
 }
 
 /* Closable button inside the expanded image */
