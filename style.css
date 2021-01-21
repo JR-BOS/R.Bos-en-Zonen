@@ -609,21 +609,26 @@ footer span {
 
   .home .home-content .text-2 {
     font-size: 30px;
-    margin-top: 200px;
-  }
-
-  .home-content {
-    margin: auto;
+    margin-top: 150px;
   }
 
   .home .home-content .text-3 {
     font-size: 20px;
+    text-align: center;
   }
   .max-width {
     padding: 15px;
   }
   .home .home-content a {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  .home .btn {
+    position: absolute;
+    margin-top: 25px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .about .about-content .left img {
@@ -642,5 +647,9 @@ footer span {
 
   .home {
     background-position: right top;
+  }
+
+  .home .max-width {
+    margin: auto;
   }
 }
