@@ -634,4 +634,7 @@ footer span {
   .media .container {
     width: 350px;
   }
+
+  .home {
+    background-position: right top;
 }
