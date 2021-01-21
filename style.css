@@ -86,7 +86,12 @@ section {
 
 .home {
   display: flex;
-  background: url("images/bg-truckdark.jpeg") no-repeat center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.897),
+      rgba(123, 124, 128, 0)
+    ),
+    url("images/auto2.png") no-repeat center;
   background-size: cover;
   height: 100vh;
   color: white;
@@ -467,7 +472,8 @@ section .title::after {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: white;
+  color: black;
+  font-weight: 600;
   font-size: 20px;
 }
 
