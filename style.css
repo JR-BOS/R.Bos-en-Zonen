@@ -182,12 +182,14 @@ section .title::after {
 .about,
 .services,
 .contact,
-.media {
+.media,
+.history {
   font-family: "Poppins", sans-serif;
   padding-bottom: 80px;
 }
 
 .about .about-content,
+.history .history-content,
 .services .services-content,
 .contact .contact-content {
   display: flex;
@@ -312,15 +314,11 @@ section .title::after {
 
 .contact .title::after {
   content: "get in touch";
-  background: black;
-}
-.contact .title::before {
-  background: white;
 }
 
 .contact {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .contact .contact-content .column {
@@ -362,7 +360,7 @@ section .title::after {
 }
 
 .contact .contact-content .info .sub-title {
-  color: whitesmoke;
+  color: #333;
 }
 
 .contact .right form .fields {
@@ -445,6 +443,16 @@ section .title::after {
 .media .title::after {
   content: "Onze Vloot";
   padding: 2px;
+  background: black;
+}
+
+.media .title::before {
+  background: white;
+}
+
+.media {
+  background: black;
+  color: white;
 }
 
 .media .column {
@@ -505,7 +513,63 @@ section .title::after {
 .media p {
   text-align: center;
 }
+/* ===================== history section styling ====================== */
 
+.history #more {
+  display: none;
+}
+
+.history .title::after {
+  content: "ons verleden";
+}
+
+.history .history-content .left {
+  width: 45%;
+}
+.history .history-content .left img {
+  height: 480px;
+  width: 480px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-position: left;
+}
+.history .history-content .right {
+  width: 55%;
+}
+
+.history .history-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.history .history-content .right .text span {
+  color: crimson;
+}
+
+.history .history-content .right p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.history .history-content .right button {
+  display: inline-block;
+  background: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.history .history-content .right button:hover {
+  color: crimson;
+  background: none;
+}
 /* =================== footer styling ================= */
 
 footer {
@@ -590,15 +654,18 @@ footer span {
   .max-width {
     max-width: 930px;
   }
-  .about .about-content .column {
+  .about .about-content .column,
+  .history .history-content .column {
     width: 100%;
   }
-  .about .about-content .left {
+  .about .about-content .left,
+  .history .history-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about-content .right {
+  .about .about-content .right,
+  .history .history-content .right {
     flex: 100%;
   }
 
@@ -644,7 +711,8 @@ footer span {
     transform: translate(-50%, -50%);
   }
 
-  .about .about-content .left img {
+  .about .about-content .left img,
+  .history .history-content .left img {
     height: 350px;
     width: 350px;
   }

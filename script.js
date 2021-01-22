@@ -80,3 +80,19 @@ function openDetails(cityName) {
     document.getElementById(cityName).style.display = "block";
   }
 }
+
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Lees verder";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Lees minder";
+    moreText.style.display = "inline";
+  }
+}
