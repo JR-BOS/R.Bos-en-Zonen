@@ -52,6 +52,11 @@ $(document).ready(function () {
     $(".navbar .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
+
+  $(".navbar .menu li").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
 });
 
 //-------------------- JavaScript Code -> image gallery --------------------
